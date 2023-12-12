@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tinggi = 160;
+        let usia = 17;
+        let kendaraan = 'bajai'
+
+        console.log('===========================');
+        console.log('CONTOH PENGECEKAN PEMBUATAN SIM');
+        console.log('Syarat bisa membuat SIM, usia minimal 17 dan tinggi minimal 150, Jenis kendaraan mobil = SIM A, motor = SIM C, truk = SIM B, selain itu = Tidak ada SIM untuk Jenis Kendaraan');
+        console.log('===========================');
+        
+        if (usia >= 17 && tinggi >= 150) {
+            console.log('Kamu bisa membuat SIM !!!');
+
+            if (kendaraan == 'mobil') {
+                console.log('Kamu perlu SIM A');
+            } else if (kendaraan == 'truk') {
+                console.log('Kamu perlu SIM B');
+            } else if (kendaraan == 'motor') {
+                console.log('Kamu perlu SIM C');
+            } else {
+                console.log('Jenis SIM untuk kendaraan ini tidak ada');
+            }
+        }  else {
+            console.log('Kamu tidak memenuhi Syarat pembuatan SIM');
+        }
+
+
+        console.log('===========================');
+        console.log('CONTOH PENGECEKAN KELULUSAN');
+        console.log('===========================');
+        // KRITERIA LULUS NILAI DIATAS 65
+        let nilai = 66
+
+
+        nilai > 65 ? console.log('LULUS') : console.log('TIDAK LULUS'); // ternary operator
+
+        if (nilai > 65) {
+            console.log('LULUS');
+        } else{
+            console.log('TIDAK LULUS');
+        }
+    </script>
+</body>
+</html>

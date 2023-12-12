@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi</title>
+</head>
+<body>
+    <h1 id="demo">DEMO</h1>
+
+
+    <script>
+       
+        console.log('fungsi perkalian1 :' + perkalian1());
+    
+        // deklarasi fungsi / function
+       function perkalian1(angka1 = 1, angka2 = 2) {
+            return angka1*angka2;
+       }
+        
+        // function expression
+        const perkalian2 = (angka1, angka2) => {
+            return angka1*angka2;
+        }
+        console.log('fungsi perkalian 2 :' +perkalian2(3,5));
+
+        function toCelcius(farenheit) 
+        {
+            return (5/9) * (farenheit-32);
+        }
+
+        let x = toCelcius(77);
+        let text = 'Suhu sekarang ' + x + ' celcius';
+
+        document.getElementById('demo').innerHTML = text
+
+        const pangkatDua = angka => angka * angka;
+
+        console.log('fungsi pangkat 2 :' + pangkatDua(4));
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hasKTP = true;
+        let hasSIM = false;
+        let hasBank = false;
+
+        // OR nulisnya => "||" -> jika salah satu nilainya benar maka nilainya benar / true
+        if (hasKTP || hasSIM || hasBank) {
+            console.log('Saya bisa beli tiket');
+        }
+
+        // AND nulisnya => "&&" -> dua2nya harus bener / true
+        if (hasKTP && hasSIM) {
+            console.log('Saya bisa beli tiket');
+        }
+    </script>
+</body>
+</html>

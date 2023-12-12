@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const harga = [20, 14.5, 29, 33.4];
+      
+
+        const names = ['Bayu', 'Adi', 'Agus', 'Dedi'];
+
+        function tambahNamaDepanBelakang(name, depan = 'Mr/Mrs', belakang = 'Spd') {
+            return `${depan} ${name} ${belakang}`;
+        }
+
+        function tambahNamaDepan(name, tambahan) {
+            return tambahan + ' ' + name;
+        }
+
+        function tambahNamaBelakang(name, tambahan) {
+            return name + ' ' + tambahan;
+        }
+
+        let namaBaru = names.map((name) => {
+            namaDitambahiDepan = tambahNamaDepan(name, 'Dr.')
+            namaFull = tambahNamaBelakang(namaDitambahiDepan, 'S.pd')
+
+            return namaFull;
+        })
+
+        console.log(namaBaru);
+
+        let hargaBaru = harga.map((h) => {
+            return h * 2;
+        })
+    </script>
+</body>
+</html>

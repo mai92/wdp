@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let angka = [27, 38, 4, 43, 9, 82 ,10];
+
+        function selectionSort(number) {
+            for (let i=0; i < number.length; i++) {
+                let lowest = i; 
+                // i -> 0 (27)
+                // i -> 1 (38)
+                // i -> 2 (27)
+
+                for (let j = i + 1; j < number.length; j++) {
+                    // proses 0 1  - number lowest = 27, number j = 38, lowest = i (27)
+                    // proses 0 2 -  number lowest = 27, number j = 4, lowest = lowest (index 2) (4)
+                    // proses 0 3 -  number lowest = 4, number j = 43, lowest = lowest (index 2) (4)
+                    // proses 0 4 -  number lowest = 4, number j = 9, lowest = lowest (index 2) (4)
+                    // proses 0 5 -  number lowest = 4, number j = 82, lowest = lowest (index 2) (4)
+                    // proses 0 6 -  number lowest = 4, number j = 10, lowest = lowest (index 2) (4)
+                    // Setelah swap [4, 38, 27, 43, 9, 82 ,10]
+                    // proses 1 1 -  number lowest = 38, number j = 27, lowest = j (index 2) (27)
+                    // proses 1 2 -  number lowest = 27, number j = 43, lowest = lowest (index 2) (27)
+                    // proses 1 2 -  number lowest = 27, number j = 9, lowest = j (index 4) (9)
+                    // proses 1 2 -  number lowest = 27, number j = 82, lowest = lowest (index 4) (9)
+                    // proses 1 2 -  number lowest = 27, number j = 10, lowest = lowest (index 4) (9)
+                    // Setelah swap [4, 9, 27, 43, 38, 82 ,10]
+                    if(number[j] < number[lowest]) {
+                        lowest = j;
+                    }
+                }
+                
+                if (lowest != i) {
+                    [number[i], number[lowest]] = [number[lowest], number[i]]
+                    console.log('proses ke-' + i + ' = '+ number);
+                }
+               
+            }
+            console.log('Setelah diurutkan ' , number )
+        }
+
+        selectionSort(angka)
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function removeSpaces(text) {
+            return text.replace(' ', '')
+        }
+
+        function reverseText(text) {
+            return text.split('').reverse().join('')
+        }
+
+        function updateVowels(text) {
+            var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+            return text.split('').map(x => vowels.indexOf(x.toLowerCase())>=0 ? String.fromCharCode(x.charCodeAt()+1) : x).join('');
+        }
+
+        function encrypPasword(text) {
+            var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+            const noSpace = text.replace(' ', '');
+            const reversed = noSpace.split('').reverse().join('')
+            const encrypted = reversed.split('').map(x => vowels.indexOf(x.toLowerCase())>=0 ? String.fromCharCode(x.charCodeAt()+1) : x).join('');  
+            
+            return encrypted;
+        }
+
+        const text = 'hacktiv 8'; // 8vjtkcbh
+       
+        console.log(encrypPasword(text));
+    </script>
+</body>
+</html>

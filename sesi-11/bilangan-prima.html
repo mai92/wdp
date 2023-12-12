@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPrime(number) {
+            let divider = [];
+
+            for (let i=1; i<=number; i++) {
+                if (number % i == 0) {
+                    divider.push(i);
+                }
+            }
+
+            return divider.length <= 2 ? true : false;
+        }
+
+        function listPrimeNumbers(number1, number2) {
+            let primeNumbers = [];
+            
+            for (let i=number1; i <= number2; i++) {
+                if (isPrime(i)) {
+                    primeNumbers.push(i);
+                }
+            }
+
+            return primeNumbers;
+        }
+
+        console.log(listPrimeNumbers(10, 20));
+    </script>
+</body>
+</html>

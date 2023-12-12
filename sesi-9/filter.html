@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     const numbers = [1,2,3,4,5,6,7,8];
+     
+     let ganjil = numbers.filter((n) => n % 2 == 1)
+     let genap = numbers.filter((n) => n % 2 == 0)
+
+     console.log(ganjil);
+     console.log(genap);
+
+     function getCityWithFirstLetter(cities, firstLetter) {
+        return cities.filter((city) => city.charAt(0) == firstLetter)
+     }
+
+     function getCityWithLastLetter(cities, lastLetter) {
+        return cities.filter((city) => city.charAt(city.length - 1) == lastLetter)
+     }
+
+     const cities = ['Sidoarjo', 'Surabaya', 'Jakarta', 'Bandung', 'Semarang', 'Solo', 'Jember'];
+    console.log(getCityWithFirstLetter(cities, 'B'));
+    console.log(getCityWithFirstLetter(cities, 'J'));
+    console.log(getCityWithFirstLetter(cities, 'S'));
+
+    console.log(getCityWithLastLetter(cities, 'g'));
+    </script>
+</body>
+</html>

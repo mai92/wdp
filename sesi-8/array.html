@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        var number = [1,2,3]
+        
+        number.push(4) // menambahkan data ke dalam array pada posisi terakhir
+        number.pop() // menghilangkan / menghapus data ke dalam array pada posisi terakhir
+        number.unshift(4) // menambahkan data ke dalam array pada index 0
+        number.shift()
+        console.log(number);
+
+
+        // array sort
+        var names = ['Dimas', 'Amirul', 'John', 'Marcel', 'Ken']
+        names.splice(2,2) // menghapus data pada array menggunakan indexnya dan berapa banyak data yang mau dihapus 
+        console.log(names);
+
+
+        var kalimat = 'Saya belajar koding javascript di hacktiv-8';
+        var kata = kalimat.split(' ')
+
+        console.log(kata);
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const donations = [1000, 2000, 5000, 7500, 8500];
+
+        let total = donations.reduce((total, donation) => {
+            return total + donation;
+        })
+    
+        console.log(total);
+    </script>
+</body>
+</html>

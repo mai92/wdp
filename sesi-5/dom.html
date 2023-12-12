@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">lah 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="konten">
+        <h1 id="title">Judul</h1>
+        <p id="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet recusandae omnis possimus cumque fugit repellat deleniti commodi modi atque totam voluptatibus necessitatibus accusantium itaque corporis fugiat, voluptatum, perferendis rem?</p>
+
+        <ul>
+            <li class="daftar">daftar 1</li>
+            <li class="daftar">daftar 2</li>
+            <li class="daftar">daftar 3</li>
+            <li class="daftar">daftar 4</li>
+        </ul>
+
+        <input type="text" id="name" >
+    </div>
+
+    <script>
+        const judul = document.querySelector('#title') // mencari element dengan selector 'ID title / #title'
+        
+        const daftar = document.querySelectorAll('.daftar')
+        
+        judul.innerHTML = 'Judul yang Baru' // mengubah judul dengan nilai baru
+
+        daftar.forEach(e => {
+            e.innerHTML = 'Daftar Baru';
+        })
+
+        const paragraf = document.createElement('p');
+        paragraf.innerHTML = 'Paragraf Baru';
+
+        const konten = document.querySelector('#konten');
+        konten.appendChild(paragraf)
+
+        judul.remove()
+
+        const inputanNama = document.querySelector('#name')
+        inputanNama.value = judul.innerHTML
+    </script>
+</body>
+</html>
