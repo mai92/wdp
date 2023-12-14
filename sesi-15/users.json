@@ -1,0 +1,28 @@
+[
+    {
+        "nama": "Amirul",
+        "umur": 17,
+        "alamat": {
+            "kota": "Sidoarjo",
+            "jalan": "Gajahmada"
+        },
+        "hobi": [
+            "coding",
+            "sleep",
+            "reading"
+        ]
+    },
+    {
+        "nama": "Dimas",
+        "umur": 17,
+        "alamat": {
+            "kota": "Jakarta",
+            "jalan": "Thamrin"
+        },
+        "hobi": [
+            "coding",
+            "swimming",
+            "football"
+        ]
+    }
+]

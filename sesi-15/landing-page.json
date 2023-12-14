@@ -1,0 +1,21 @@
+{
+    "home": {
+        "name": "Dimas",
+        "job": "Web Developer",
+        "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolorem ipsum at aliquam labore nisi soluta aut aperiam enim, numquam laboriosam doloremque in ipsa accusantium necessitatibus voluptatibus. Quia, aliquid soluta?"
+    },
+    "portofolio": {
+        "web": [
+            {
+                "project-name": "web abc",
+                "link": "https://blll",
+                "screenshot": "/image/porto.png"
+            },
+            {
+                "project-name": "web xzy",
+                "link": "https://zxzy",
+                "screenshot": "/image/porto-1.png"
+            }
+        ]
+    }
+}

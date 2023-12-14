@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <script>
+        function calculate(param1, param2, callback) {
+            result = param1 + param2;
+
+            if (typeof callback == 'function') {
+                result = callback(param1);
+            }
+
+            return result;
+        }
+
+        resultA = calculate(7000,2000, function(x,y){ return 'Rp.' +  x*y;});
+
+        console.log(resultA);
+    </script>
+</body>
+</html>
